@@ -19,9 +19,9 @@ The company name stays **Cup1**. It is short and easy to remember, and the tagli
 
 ![Cup1 visual identity – logo, colors, type](../../brand/brand-sheet.png){width=100%}
 
-- **Logo (v1.1, Rim Monogram):** a takeaway cup seen from above. The rim forms a **C** that holds the **1** (C1), and reads like a seal of approval for "fully documented". It comes with the "Cup1" wordmark in Inter Display ExtraBold, converted to outlines. Versions: horizontal, stacked, icon, tile, reversed and mono. A heavier small-size version is used for the favicon. Full rules are in *Cup1_Logo_Guidelines.pdf*. Three concepts were reviewed; the side-view cup and cup-shaped "u" options were rejected.
+- **Logo (v1.2, chosen by the owner):** the name is written as **"Cup"** and the **1 sits inside a teal takeaway cup**, cut out so it shows the background. The cup doubles as the favicon and app icon. Wordmark: Inter Display Black, converted to outlines. Versions: horizontal (primary), reversed, one-color, icon, tile, and a heavier favicon. Rules are in *Cup1_Logo_Guidelines.pdf*. History: round 1 explored three concepts (the C1 Rim Monogram became v1.1); in round 2 the owner chose the "Cup" + cup-1 idea in teal over navy and orange options.
 - **Colors:** Harbor Teal `#1F4E5A` (brand), Ink `#1C2B2E`, Kraft `#B88A5A` (accent, never for text), Paper `#F7F3EC` (background), Kraft Tint `#EDE5D8` (cards). Verified green `#2E7D4F` is used **only** for compliance proof. All text colors pass WCAG AA contrast (4.5:1 or better).
-- **Type:** Inter (free on Google Fonts). ExtraBold for headlines, Regular and SemiBold for text.
+- **Type:** Inter (free on Google Fonts). ExtraBold for headlines, Regular and SemiBold for text. The logo wordmark uses Inter Display Black.
 - **Imagery:** real product photos from our samples. No stock eco clichés such as leaves, globes or seedlings.
 - The full design system (tokens, usage rules, dark theme) lives in the **Cup1 Design System** artifact for the Phase 4 website build.
 

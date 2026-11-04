@@ -2,7 +2,7 @@
 
 Cup1's visual identity: a factory-direct packaging partner that puts a café's brand on every cup, with the compliance paperwork done. The look is **clean, practical and proof-led**, like well-made packaging and a tidy spec sheet. It is not a trendy eco brand.
 
-This system was built from the Phase 3 brand strategy. Logo v1.1 (Rim Monogram, 5 Nov 2026) is final artwork with the text converted to outlines; full rules are in Cup1_Logo_Guidelines.pdf.
+This system was built from the Phase 3 brand strategy. Logo v1.2 ("Cup" + cup-1, chosen by the owner on 5 Nov 2026) is final artwork with the text converted to outlines; full rules are in Cup1_Logo_Guidelines.pdf.
 
 ## Content fundamentals
 
@@ -21,7 +21,7 @@ This system was built from the Phase 3 brand strategy. Logo v1.1 (Rim Monogram, 
 
 **Layout.** Generous white space; a 12-column grid with `space-6` gutters; sections separated by `space-12`. Cards use `surface-200`, `radius-md` and a `line` border, with no shadows.
 
-**Shape.** The logo gives two shapes: the **open rim** (a thick ring with a gap on the right, the "C") and the **pill** (`radius-pill`). Use rim arcs sparingly as section accents and pills for status chips. Corners are otherwise `radius-md`.
+**Shape.** The logo gives two shapes: the **tapered cup** and the **lid pill** (`radius-pill`). Use the cup silhouette sparingly as an accent and pills for status chips. Corners are otherwise `radius-md`.
 
 **Imagery.** Real product photos from Cup1 samples, on `surface-0` or a kraft backdrop, with soft daylight. Never stock photos passed off as our product. Avoid eco clichés: leaves, globes, hands holding seedlings.
 
@@ -31,10 +31,10 @@ Simple 1.5px line icons with rounded caps (a Lucide-style set), at 20px or 24px,
 
 ## Logos
 
-**Rim Monogram (v1.1):** a takeaway cup seen from above. The rim forms a **C** that holds the **1** (C1) and reads like a seal of approval. The wordmark "Cup1" is Inter Display ExtraBold, outlined.
+**v1.2: "Cup" + cup-1.** The name is written as "Cup" (Inter Display Black, outlined) and the **1 is cut out of a Harbor Teal takeaway cup** (true knockout, so it shows the background). The cup alone is the icon, favicon and app icon.
 
-- **Versions:** horizontal (primary), stacked, icon, tile, reversed, one-color black/white, plus a heavier small-size mark used only for the 16–48 px favicon.
-- **Colors:** icon `brand`, wordmark `ink` on light grounds; everything `surface-100` (Paper) on `brand`/`ink` grounds; black or white for one-color print.
-- **Clear space:** x = ¼ of the icon height on every side.
-- **Minimum size:** horizontal 96 px / 25 mm wide; stacked 48 px / 15 mm; icon 24 px / 8 mm; favicon 16 px.
-- **Don'ts:** never stretch, recolor, rotate, add shadows or effects, place on busy backgrounds, re-set the wordmark in another font, or move the "1" outside the rim.
+- **Versions:** horizontal (primary), reversed, one-color black/white, icon, tile, plus a heavier tile used only for the 16–48 px favicon.
+- **Colors:** "Cup" in `ink` and the cup in `brand` on light grounds; everything `surface-100` (Paper) on `brand`/`ink` grounds; all black or all white for one-color print.
+- **Clear space:** x = ¼ of the cup height on every side.
+- **Minimum size:** horizontal 24 px tall / 25 mm wide; icon 24 px / 8 mm; favicon 16 px.
+- **Don'ts:** never stretch, recolor, rotate, add shadows or effects, place on busy backgrounds, set the "1" as text next to the cup, or add a sleeve or steam to the cup.

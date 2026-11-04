@@ -12,7 +12,7 @@ This repository is the single source of truth for the project: phase tracker, re
 |---|---|---|
 | 1 | Product Research | ✅ Done |
 | 2 | Supplier Sourcing | 🟡 Research done; RFQs not yet sent |
-| 3 | Branding | ✅ Revision 1 done (logo v1.1 + favicon), awaiting approval |
+| 3 | Branding | ✅ Revision done (logo v1.2 "Cup" + cup-1, favicon), awaiting approval |
 | 4–8 | Website → Clients → Onboarding → Fulfillment → Finance | ⏳ Not started |
 
 Full detail: **[docs/00-master-phase-tracker.md](docs/00-master-phase-tracker.md)**
@@ -30,7 +30,7 @@ cup1-business-ops/
 │   ├── phases/                      # Phase-by-phase decisions and deliverable sources
 │   └── research/                    # Competitor intelligence, website design teardown
 ├── brand/
-│   ├── logo/                        # v1.1 logo: svg/, png/, favicon/, presentation/ (guidelines PDF, mockups)
+│   ├── logo/                        # v1.2 logo: svg/, png/, favicon/, presentation/ (guidelines PDF, mockups, concept rounds)
 │   ├── design-system/               # tokens.json, brand book README, cover preview
 │   ├── brand-sheet.png
 │   └── homepage-blueprint.png

@@ -24,7 +24,7 @@
 |---|---|---|---|
 | 1 | Product Research | ✅ Done: product chosen (custom paper cups & food packaging; lead SKU 12oz double-wall hot cup) | Yes (implicitly by user, 5 Nov 2026) |
 | 2 | Supplier Sourcing | 🟡 Desk work done; **RFQs not yet sent**, no quotes or samples | Partly (user moved on) |
-| 3 | Branding | ✅ Revision 1 done (new logo + favicon, 5 Nov 2026): **awaiting user APPROVE / REVISE** | **No – pending** |
+| 3 | Branding | ✅ Revision done: logo v1.2 "Cup" + teal cup-1 chosen by owner, favicon set (5 Nov 2026): **awaiting user APPROVE / REVISE** | **No – pending** |
 | 4 | Website Development | ⏳ Not started (blueprint ready from design teardown) | – |
 | 5 | Client Acquisition | ⏳ Not started (segments defined) | – |
 | 6 | Client Onboarding | ⏳ Not started | – |
@@ -57,12 +57,12 @@
   - [ ] Find a second Vietnam paper-cup factory
 - **Deliverables:** `Cup1_Phase2_Sourcing_Model.xlsx`, `Cup1_Phase2_Supplier_Sourcing_Pack.pdf/.docx` (folder); doc https://claude.ai/artifact/XzLCMWbwm8tUBrUW4ACq6U; `docs/phases/phase2-sourcing-findings.md`, `docs/phases/phase2-supplier-sourcing-pack.md`.
 
-### Phase 3 – Branding ✅ (revision 1 done, awaiting approval)
-- **Revision 1 (5 Nov 2026):** user asked for a branding revision and for Claude to design the logo and favicon using the `logo-favicon-designer` skill. Result: **Rim Monogram logo v1.1** (C1 seal), full logo system, favicon/app-icon set, guidelines, mockups. Files: `brand/logo/`.
+### Phase 3 – Branding ✅ (revision done – logo v1.2, awaiting approval)
+- **Revision 1 (5 Nov 2026):** user asked for a branding revision and for Claude to design the logo and favicon using the `logo-favicon-designer` skill. Round 1 produced v1.1 (Rim Monogram C1). Owner feedback: wanted "Cup" written + a cup holding the numeral 1, readable in the navbar. Round 2: three colorways; **owner chose A, the teal cup** (palette unchanged). Final: **logo v1.2**, full logo system, favicon/app-icon set, guidelines, mockups in `brand/logo/`. Design skill: `logo-favicon-designer` (proposed to the user's account).
 - **User decisions:** brand Cup1 itself as a B2B supplier; positioning **eco + compliant**.
 - **Tagline (recommended):** "Your brand. Every cup. Fully documented."
 - **Identity:**
-  - Logo: Rim Monogram (C1) + "Cup1" wordmark (v1.1)
+  - Logo v1.2: "Cup" + teal takeaway cup with the 1 cut out (cup = favicon)
   - Colors: Harbor Teal #1F4E5A, Ink #1C2B2E, Kraft #B88A5A, Paper #F7F3EC, Kraft Tint #EDE5D8, Verified green #2E7D4F (compliance only)
   - Font: Inter (ExtraBold for headlines)
 - **Claims rule:** if we can't attach the document, we don't make the claim. No unqualified eco or recyclable claims; "compostable" only for BPI-certified SKUs; no reviews or client logos until they are real.
