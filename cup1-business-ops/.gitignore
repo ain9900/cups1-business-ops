@@ -1,0 +1,19 @@
+# Office lock/temp files
+~$*
+*.tmp
+.~lock.*#
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets – never commit
+.env
+*.key
+credentials*

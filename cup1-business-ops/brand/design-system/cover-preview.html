@@ -1,0 +1,36 @@
+<!-- @dsCard height=288 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--surface-100); width: 960px; height: 288px; position: relative; overflow: hidden; }
+  svg { position: absolute; left: 0; top: 0; }
+  .brand { fill: var(--brand); }
+  .kraft { fill: var(--kraft); }
+  .ink { fill: var(--ink); }
+  .stone { fill: var(--line-strong); }
+  .verified { fill: var(--verified); }
+  .rim { fill: var(--surface-100); }
+  .blk { rx: var(--radius-md); }
+  .name { position: absolute; left: 48px; bottom: 92px; margin: 0; font-family: "Inter", "Helvetica Neue", Arial, sans-serif; font-weight: 800; font-size: 120px; line-height: .92; letter-spacing: -5px; color: var(--ink); }
+  .tag { position: absolute; left: 52px; bottom: 40px; margin: 0; max-width: 440px; font-family: "Inter", "Helvetica Neue", Arial, sans-serif; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style>
+<svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+  <!--
+    blocks: brand 176x264 slab (tall, the identity colour), ink 128x216 bleeding right, kraft 96x144, line-strong 96x80, verified 48x32 accent; radius-md corners.
+    arrangement: one tall slab with satellites, right of x=528, brand slab bleeding off the top edge.
+    pattern: literal motif (logo's cup lid) as five rim pills (radius-pill = half of 16px height) cut out of the brand slab in surface-100, tapering 128→96 like a stacked cup.
+    scales: gaps space-4 (16px), pill height space-4, pill pitch 32px (space-4 x2), block radii radius-md, pills radius-pill.
+  -->
+  <rect class="stone blk" x="528" y="24" width="96" height="80"/>
+  <rect class="kraft blk" x="528" y="120" width="96" height="144"/>
+  <rect class="brand blk" x="640" y="-8" width="176" height="272"/>
+  <rect class="ink blk" x="832" y="48" width="136" height="216"/>
+  <rect class="verified blk" x="832" y="0" width="48" height="32"/>
+  <rect class="rim" x="664" y="40" width="128" height="16" rx="8"/>
+  <rect class="rim" x="668" y="72" width="120" height="16" rx="8"/>
+  <rect class="rim" x="672" y="104" width="112" height="16" rx="8"/>
+  <rect class="rim" x="676" y="136" width="104" height="16" rx="8"/>
+  <rect class="rim" x="680" y="168" width="96" height="16" rx="8"/>
+</svg>
+<h1 class="name">Cup1</h1>
+<p class="tag">Your brand. Every cup. Fully documented.</p>
