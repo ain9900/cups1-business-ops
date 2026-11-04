@@ -1,5 +1,6 @@
 # Cup1 – Master Phase Tracker & Project Memory
 
+**Git repository:** https://github.com/ain9900/cup1-business-ops (private, branch `main`): clone it, open it in Claude Code, type STATUS. Keep `docs/00-master-phase-tracker.md` in the repo in sync with this file.
 **Last updated:** 5 Nov 2026 · **Owner:** Cup1 team · **How to use:** read this first in any new chat. Update the status, decisions and next actions whenever a phase moves. Phases run one at a time, and each needs user APPROVAL before the next starts.
 
 ---
@@ -24,7 +25,7 @@
 |---|---|---|---|
 | 1 | Product Research | ✅ Done: product chosen (custom paper cups & food packaging; lead SKU 12oz double-wall hot cup) | Yes (implicitly by user, 5 Nov 2026) |
 | 2 | Supplier Sourcing | 🟡 Desk work done; **RFQs not yet sent**, no quotes or samples | Partly (user moved on) |
-| 3 | Branding | ✅ Revision done: logo v1.2 "Cup" + teal cup-1 chosen by owner, favicon set (5 Nov 2026): **awaiting user APPROVE / REVISE** | **No – pending** |
+| 3 | Branding | ✅ Revision done: logo v1.2 + favicon set; **Logo Palette** of all variants/font options built for final choice (5 Nov 2026): **awaiting owner's pick, then APPROVE / REVISE** | **No – pending** |
 | 4 | Website Development | ⏳ Not started (blueprint ready from design teardown) | – |
 | 5 | Client Acquisition | ⏳ Not started (segments defined) | – |
 | 6 | Client Onboarding | ⏳ Not started | – |
@@ -67,7 +68,9 @@
   - Font: Inter (ExtraBold for headlines)
 - **Claims rule:** if we can't attach the document, we don't make the claim. No unqualified eco or recyclable claims; "compostable" only for BPI-certified SKUs; no reviews or client logos until they are real.
 - **Recommended additions (from research):** show "from 30,000 cups · ~35 days + shipping"; add a "Request a Sample Kit" call to action.
-- **Open items:** [ ] User APPROVE/REVISE · [x] Wordmark outlined (done in v1.1) · [ ] Professional trademark search before registering.
+- **Logo Palette (5 Nov 2026):** owner shared 6 reference samples and asked for every variant in one place to choose from. Built the Logo Palette page https://claude.ai/artifact/RpmU4DEYZAvoMoecMwDB2Q: font options F1–F6 (v1.2 cup unchanged, only the "Cup" lettering changes: Fredoka, Nunito Black, Bricolage Grotesque, Fraunces, Archivo Black, Baloo 2), new suggestions S1–S5 (navy line cup + orange 1; navy + orange cup with swoosh; forest + lime; teal cup + kraft lid; v1.2 with tagline lockup), all earlier concepts (Round 1, v1.1, Round 2 A/B/C, v1.2) and the owner's samples. Each tested in a 30px navbar, on a kraft Sample Kit label and as a 16/32/48px favicon. Samples saved in `brand/logo/references/` (with notes); palette SVGs in `brand/logo/palette/svg/`.
+- **Our recommendation:** keep the v1.2 structure; optionally switch the font to F2 Nunito Black or F3 Bricolage Grotesque; colour stays teal or moves to S1 navy + orange; taglines/illustrations only for large uses. Sample issues: ® only after registration; leaf/"sustainable" need documents.
+- **Open items:** [ ] **Owner picks from the Logo Palette** (shortlist) · [ ] If a font option is chosen: get the font file (Google Fonts, OFL) and outline the final SVGs · [ ] User APPROVE/REVISE · [x] Wordmark outlined (done in v1.1) · [ ] Professional trademark search before registering.
 - **Deliverables:**
   - `Cup1_Phase3_Brand_Strategy.pdf/.docx`, `Cup1_Brand_Sheet.png`, `Brand Assets/` (logos PNG/SVG) in the folder
   - Brand doc https://claude.ai/artifact/AowAYBzKhSdbusoSipzGak
