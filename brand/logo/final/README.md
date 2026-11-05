@@ -1,6 +1,6 @@
 # Cups1 – final logo kit (owner-approved artwork, 2026-11-06)
 
-The owner supplied the two final logo images. They are the **master artwork**; every other file here is derived from them.
+The owner supplied the final logo images: with tagline (2 files) and without tagline (1 file, 2026-11-06). They are the **master artwork**; every other file here is derived from them.
 
 | File | Use |
 |---|---|
@@ -9,8 +9,9 @@ The owner supplied the two final logo images. They are the **master artwork**; e
 | `cups1-logo-final-transparent.png` | **Main file.** Clean transparent cut-out of the master, trimmed. Use on white, cream, kraft |
 | `cups1-logo-final-on-white-trimmed.png` | Same, white background, trimmed |
 | `cups1-logo-final-reversed.png` | For navy/dark backgrounds (navy parts turned white) |
-| `cups1-logo-final-no-tagline.png` / `-reversed` | Social headers, email signature, website hero |
-| `cups1-logo-final-nav.png` / `-reversed` | **Website navbar** (no steam, no tagline), use at 32–44px tall |
+| `cups1-logo-final-no-tagline-original.png` | Master without tagline, as supplied (transparent, 2172×724) |
+| `cups1-logo-final-no-tagline.png` / `-on-white` / `-reversed` | Without tagline, trimmed (from the no-tagline master): website header on large screens, social banners, email signature, invoices |
+| `cups1-logo-final-nav.png` / `-reversed` | **Website navbar** (no-tagline master with the steam removed), use at 32–44px tall |
 | `icon/cups1-avatar-white-1024.png`, `icon/cups1-avatar-navy-1024.png` | Social profile pictures (LinkedIn, Facebook, WhatsApp Business), cropped from the master cup |
 | `icon/cups1-icon-*.svg/png` | Simplified cup icon (vector) for app tiles and UI |
 | `favicon/` | favicon.ico (16/32/48), favicon.svg, apple-touch-icon (180), icon-192/512, maskable-512, site.webmanifest, HTML snippet |
