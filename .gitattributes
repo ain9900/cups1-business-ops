@@ -1,0 +1,9 @@
+# Normalize line endings so Windows (home/office) and Linux/Mac copies don't show false changes
+* text=auto
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.zip binary
