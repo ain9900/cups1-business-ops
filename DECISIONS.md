@@ -11,7 +11,7 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 | Extra revenue | Sourcing commission for distributors who import themselves (3–10% of FOB, minimum ≈ US$1,000/order) + service fees (design, Sample Kit, QC, retainers) |
 | Market | Worldwide B2B. **Launch market: USA & Canada** |
 | Trade terms | USA & Canada: delivered (DDP) price. Other regions: FOB / CIF first |
-| Brand | Brand name in the logo: **Cups1** (owner, 2026-11-06). Tagline in logo: "Custom Branded Packaging for Cafés & Food Businesses"; positioning line "Your brand. Every cup. Fully documented.". **Logo v2.0** = owner's Sample 1 rebuilt in vector (navy line cup, orange steam + swoosh, green leaf, navy "Cups" + orange 1): `brand/logo/cups1-v2/`. Colours: Navy #102A4C, Orange #F28A1B, Leaf green #5FA136. v1.2 (teal) superseded |
+| Brand | Brand name in the logo: **Cups1** (owner, 2026-11-06). Tagline in logo: "Custom Branded Packaging for Cafés & Food Businesses"; positioning line "Your brand. Every cup. Fully documented.". **Final logo (owner, 2026-11-06):** owner-supplied artwork (navy line cup with orange steam, green leaf, orange swoosh, italic navy "Cups" + orange "1", tagline). Master + derived files (transparent, reversed, navbar, avatars, favicon set): `brand/logo/final/`. Colours: Navy #00213C, Orange #FE7702, Leaf #67A42D (tokens updated). Teal v1.2 and vector v2.0 superseded |
 | Positioning | Eco + compliant, proof-led: "if we can't attach the document, we don't make the claim" |
 | Products | Disposable paper food packaging (cups, lids, bowls, boxes, plates), mostly custom-printed. Lead SKU: 12oz double-wall hot cup |
 | Supplier visibility | Hidden: buyers deal only with Cup1 |
@@ -23,8 +23,8 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 
 ## Open decisions (owner)
 - [ ] **Name:** is the company/website renamed from "Cup1" to **Cups1** everywhere (domain, documents, repo, trademark search), or only in the logo?
-- [ ] Approve logo v2.0 (`brand/logo/cups1-v2/`); keep or drop the leaf (claims rule: leaf implies an eco benefit we must document)
-- [ ] Update design system colours/tokens from teal to navy + orange (follows logo v2.0)
+- [ ] Leaf in the logo implies an eco benefit: back it with documents on site/packaging (claims rule)
+- [ ] Vector (SVG/AI/EPS) trace of the final logo for large print: designer
 - [ ] Target margin % (placeholder model uses 35% gross) · buyer deposit % (repo model: 50/50) · sample policy · minimum order value
 - [ ] Company registration country and bank (notes assume Bangladesh base: confirm USD receipt rules with an accountant), budget
 - [ ] Priority regions after USA & Canada (e.g. Middle East, Europe)
@@ -57,3 +57,4 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 | 2026-11-05 | Business Expert | Top 5 Alibaba suppliers for the full range: Sowinpak, Jeafer, Quanzhou Dayu (new), Hefei Hengxin, Shanghai Sunkea (new). Note: all except Sowinpak-Vietnam are China-origin, so mainly for non-US/Canada orders | `01-business/top5-alibaba-suppliers.md` | **Proposed**, owner to approve |
 | 2026-11-05 | Owner | **Merged "Cup1 B2B" and "cup1-business-ops" into one project / one Git repo.** Worldwide with USA & Canada first; reseller + commission; three-expert system kept, phase gates retired; duplicates removed, superseded files in `archive/` | Use the same project and the same Claude instructions at home and at the office | Active |
 | 2026-11-06 | Owner | **Logo pick: Sample 1 (navy cup, steam & leaf), spelled "Cups1".** Rebuilt as vector logo v2.0 with full, no-tagline, navbar and icon versions + favicon set | Owner's shortlist from the Logo Palette | Active (name scope to confirm) |
+| 2026-11-06 | Owner | **Final logo = owner-supplied Cups1 artwork** (2 images). Claude derived transparent/reversed/navbar/no-tagline versions, social avatars and the favicon set; design tokens switched to navy #00213C + orange #FE7702 | Owner: "These 2 are the final logo" | Active |

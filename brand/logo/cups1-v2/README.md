@@ -1,3 +1,5 @@
+> **Superseded 2026-11-06:** the owner supplied the final artwork. Use `brand/logo/final/`. These upright vector files are kept only as a starting point for a vector trace.
+
 # Cups1 logo v2.0 (owner's pick, 2026-11-06)
 
 Vector rebuild of owner-shortlisted **Sample 1** (`brand/logo/references/sample-1-navy-cup-steam-leaf.png`), spelled **Cups1**.
