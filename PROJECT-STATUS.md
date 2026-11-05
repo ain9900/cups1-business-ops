@@ -6,11 +6,11 @@ Legend: ✅ done · 🟡 in progress · ⏳ not started · ⛔ blocked
 ## Overview
 | Area | Expert | Status | Next step |
 |---|---|---|---|
-| Business model | Business | ✅ Reseller + commission model set; owner numbers (margin, deposit) open | Owner decides open points in `DECISIONS.md` |
+| Business model | Business | ✅ **FINAL 2026-11-06**: B2B sourcing & trading company (reseller margin + agent commission + service fees); owner numbers (margin, deposit) open | Owner decides open points in `DECISIONS.md` |
 | Product research | Business | ✅ Custom-printed paper food packaging; lead SKU 12oz DW hot cup; launch range of 6 | — |
 | Supplier sourcing | Business | 🟡 Desk research done (2 rounds). **No RFQ sent, no quotes, no samples** | Send RFQs |
 | Branding | Marketing | ✅ **Final logo set** (owner artwork) + favicon/icons + tokens updated: `brand/logo/final/` | Confirm Cup1 → Cups1 rename scope; vector trace for print; brand doc colours |
-| Competitor research | Marketing | ✅ 9 competitors + website design teardown | Sourcing-agent competitor audit (optional) |
+| Competitor research | Marketing | ✅ 18 sites + design direction v2 + **15-competitor list matched to final model** (`03-marketing/competitor-list-15.md`) | Owner: approve colour rule + homepage structure |
 | Website | Web Developer | ⏳ Plan + 12-section homepage blueprint ready | Propose platform/stack (needs approval) |
 | Client acquisition | Marketing | ⏳ Segments defined | Prospect list (20–30), email/LinkedIn sequences, Sample Kit program |
 | Client onboarding | Business | ⏳ | Client brief template, artwork/proof process, service agreement |
@@ -42,7 +42,7 @@ Legend: ✅ done · 🟡 in progress · ⏳ not started · ⛔ blocked
 - **Open:** [ ] confirm rename Cup1 → Cups1 everywhere (docs, domain, repo) · [ ] vector trace for print · [ ] update brand strategy doc colours · [ ] trademark search on "Cups1" · [ ] back the leaf with documents · [ ] ® only after registration.
 
 ## Website – inputs ready
-`02-website/website-features-plan.md` (requirement/quote system, admin, tracking stages) + `02-website/website-design-teardown.md` (12-section homepage + product page blueprint, `brand/homepage-blueprint.png`).
+`02-website/competitor-website-report.md` (2026-11-06: 15-site scorecard, screenshots in `02-website/competitor-screenshots/`, 14 ideas; visual: https://claude.ai/artifact/GZUzn4BiLxy4oEKucS5ASU) + `02-website/website-design-direction-v2.md` (2026-11-06: colour rule, 12-section homepage, patterns to borrow; visual: https://claude.ai/artifact/RJssMs6PU2d26Ls6DJmodk) + `02-website/website-features-plan.md` (requirement/quote system, admin, tracking stages) + `02-website/website-design-teardown.md` (12-section homepage + product page blueprint, `brand/homepage-blueprint.png`).
 To do: platform, domain, delivered-quote form (product, size, qty, city, logo upload), Sample Kit request, compliance documents page,
 tracking (GTM, GA4, Clarity, Meta/LinkedIn pixels) + cookie consent, CRM (HubSpot free), SEO blog plan.
 **Blocker:** real sample photos and confirmed prices (from sourcing).
@@ -53,6 +53,8 @@ Findings: free samples are standard; MOQ, lead time and price shown up front; he
 Segments (priority): 1) café group owners (3–30 stores) 2) operations/procurement managers 3) regional distributors.
 
 ## claude.ai links (private to the owner's account unless shared)
+- **Project briefing (start here):** https://claude.ai/artifact/3UJnALKFoN6NH3tftGUuSB · offline copy `deliverables/Cups1_Project_Briefing.html`
+- Competitor map (15): https://claude.ai/artifact/QhaZ16gNGbHAAP8SuCHHje · Competitor website report: https://claude.ai/artifact/GZUzn4BiLxy4oEKucS5ASU · Design direction v2: https://claude.ai/artifact/RJssMs6PU2d26Ls6DJmodk
 - Phase 2 sourcing doc: https://claude.ai/artifact/XzLCMWbwm8tUBrUW4ACq6U
 - Brand doc: https://claude.ai/artifact/AowAYBzKhSdbusoSipzGak · Design System: https://claude.ai/artifact/JrMk8352xRmnsqFWVvjf4Q
 - Logo Palette: https://claude.ai/artifact/RpmU4DEYZAvoMoecMwDB2Q

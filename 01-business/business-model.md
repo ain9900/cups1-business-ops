@@ -1,8 +1,25 @@
-# Cup1 Business Model: B2B Sourcing Reseller (Model B)
+# Cup1 Business Model: B2B Sourcing & Trading Company (FINAL)
 
-**Prepared by:** Business Expert · **Date:** 2026-10-31, merged update 2026-11-05 · **Status:** Approved model; numbers marked TBD need owner approval
+**Prepared by:** Business Expert · **Date:** 2026-10-31, merged update 2026-11-05 · **Status:** **FINAL model (owner, 2026-11-06)**; numbers marked TBD still need owner approval
 
 > **2026-11-05 merge:** worldwide model kept, **USA & Canada is the launch market** (DDP, Vietnam origin, FDA/PFAS paperwork); revenue adds a sourcing commission and service fees (sections 3a–3c). Source of the USA/Canada numbers: `01-business/usa-canada-supplier-sourcing-pack.md`.
+
+> **FINAL BUSINESS MODEL (owner, 2026-11-06)**
+>
+> Cup1 (brand Cups1) is an **asset-light B2B sourcing and trading company** for custom-printed disposable food packaging. It runs two business types:
+>
+> | | 1. Trading company / reseller (**main**) | 2. Sourcing agent (**side**) |
+> |---|---|---|
+> | Revenue | **Product margin**: buy FOB, sell under the Cup1 name | **Sourcing commission**: 3–10% of FOB, minimum ≈ US$1,000/order |
+> | Invoice to buyer | Cup1, full order value | Factory invoices goods; Cup1 invoices its commission only |
+> | Who imports | Cup1 arranges delivery; USA & Canada sold delivered (DDP) | Buyer imports |
+> | Risk | Cup1 (quality, delay, payment) | Mostly buyer; Cup1 answers for its service |
+> | Customers | Café groups, chains, restaurants, caterers, procurement managers | Distributors and wholesalers |
+> | Supplier visibility | Hidden | Disclosed (it is the buyer's own import) |
+>
+> Plus **service fees** (design, Sample Kit, QC inspection, retainers).
+> **Not:** a manufacturer, a warehouse distributor, a marketplace/online shop, or a dropshipper.
+> Still open (owner): target margin %, deposit %, sample policy, minimum order value, company country/bank.
 
 ---
 
