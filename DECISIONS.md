@@ -3,7 +3,7 @@
 All experts read this before starting work. Start with **Current decisions** (what is true now),
 then **Open decisions** (waiting for the owner). The full history is in the **Decision log** below.
 
-## Current decisions (as of 2026-11-05)
+## Current decisions (as of 2026-11-06)
 | Topic | Decision |
 |---|---|
 | Project | **One project, one Git repo** (`ain9900/cup1-business-ops`), used from the home PC and the office PC. `CLAUDE.md` is the shared instruction file |
@@ -11,7 +11,7 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 | Extra revenue | Sourcing commission for distributors who import themselves (3–10% of FOB, minimum ≈ US$1,000/order) + service fees (design, Sample Kit, QC, retainers) |
 | Market | Worldwide B2B. **Launch market: USA & Canada** |
 | Trade terms | USA & Canada: delivered (DDP) price. Other regions: FOB / CIF first |
-| Brand | **Cup1** is the brand. Tagline "Your brand. Every cup. Fully documented." Logo v1.2 chosen (teal "Cup" + cup-1); final font/colour pick from the Logo Palette pending |
+| Brand | Brand name in the logo: **Cups1** (owner, 2026-11-06). Tagline in logo: "Custom Branded Packaging for Cafés & Food Businesses"; positioning line "Your brand. Every cup. Fully documented.". **Logo v2.0** = owner's Sample 1 rebuilt in vector (navy line cup, orange steam + swoosh, green leaf, navy "Cups" + orange 1): `brand/logo/cups1-v2/`. Colours: Navy #102A4C, Orange #F28A1B, Leaf green #5FA136. v1.2 (teal) superseded |
 | Positioning | Eco + compliant, proof-led: "if we can't attach the document, we don't make the claim" |
 | Products | Disposable paper food packaging (cups, lids, bowls, boxes, plates), mostly custom-printed. Lead SKU: 12oz double-wall hot cup |
 | Supplier visibility | Hidden: buyers deal only with Cup1 |
@@ -22,7 +22,9 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 | Website core | "Submit your requirement" / delivered-quote form + Sample Kit request + compliance documents page + order tracking (not a big online shop) |
 
 ## Open decisions (owner)
-- [ ] **Logo:** final pick from the Logo Palette (keep v1.2 font or F2/F3; teal or S1 navy+orange), then APPROVE
+- [ ] **Name:** is the company/website renamed from "Cup1" to **Cups1** everywhere (domain, documents, repo, trademark search), or only in the logo?
+- [ ] Approve logo v2.0 (`brand/logo/cups1-v2/`); keep or drop the leaf (claims rule: leaf implies an eco benefit we must document)
+- [ ] Update design system colours/tokens from teal to navy + orange (follows logo v2.0)
 - [ ] Target margin % (placeholder model uses 35% gross) · buyer deposit % (repo model: 50/50) · sample policy · minimum order value
 - [ ] Company registration country and bank (notes assume Bangladesh base: confirm USD receipt rules with an accountant), budget
 - [ ] Priority regions after USA & Canada (e.g. Middle East, Europe)
@@ -54,3 +56,4 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 | 2026-11-05 | Marketing Expert | Competitor intelligence (9 competitors) + website design teardown; price alert: noissue "from $0.10" | `03-marketing/competitor-intelligence-report.md`, `02-website/website-design-teardown.md` | Active |
 | 2026-11-05 | Business Expert | Top 5 Alibaba suppliers for the full range: Sowinpak, Jeafer, Quanzhou Dayu (new), Hefei Hengxin, Shanghai Sunkea (new). Note: all except Sowinpak-Vietnam are China-origin, so mainly for non-US/Canada orders | `01-business/top5-alibaba-suppliers.md` | **Proposed**, owner to approve |
 | 2026-11-05 | Owner | **Merged "Cup1 B2B" and "cup1-business-ops" into one project / one Git repo.** Worldwide with USA & Canada first; reseller + commission; three-expert system kept, phase gates retired; duplicates removed, superseded files in `archive/` | Use the same project and the same Claude instructions at home and at the office | Active |
+| 2026-11-06 | Owner | **Logo pick: Sample 1 (navy cup, steam & leaf), spelled "Cups1".** Rebuilt as vector logo v2.0 with full, no-tagline, navbar and icon versions + favicon set | Owner's shortlist from the Logo Palette | Active (name scope to confirm) |

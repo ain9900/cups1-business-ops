@@ -1,6 +1,6 @@
 # Cup1 – Project Status
 
-**Last updated:** 2026-11-05 · **Read after** `DECISIONS.md`. Update this file whenever work moves, then commit and push.
+**Last updated:** 2026-11-06 · **Read after** `DECISIONS.md`. Update this file whenever work moves, then commit and push.
 Legend: ✅ done · 🟡 in progress · ⏳ not started · ⛔ blocked
 
 ## Overview
@@ -9,7 +9,7 @@ Legend: ✅ done · 🟡 in progress · ⏳ not started · ⛔ blocked
 | Business model | Business | ✅ Reseller + commission model set; owner numbers (margin, deposit) open | Owner decides open points in `DECISIONS.md` |
 | Product research | Business | ✅ Custom-printed paper food packaging; lead SKU 12oz DW hot cup; launch range of 6 | — |
 | Supplier sourcing | Business | 🟡 Desk research done (2 rounds). **No RFQ sent, no quotes, no samples** | Send RFQs |
-| Branding | Marketing | 🟡 Strategy done, logo v1.2 + favicon + design system done | Owner's final Logo Palette pick → APPROVE |
+| Branding | Marketing | 🟡 Owner picked Sample 1 → **logo v2.0 "Cups1"** built (`brand/logo/cups1-v2/`) | Confirm Cup1 → Cups1 rename scope; approve logo; update design-system colours |
 | Competitor research | Marketing | ✅ 9 competitors + website design teardown | Sourcing-agent competitor audit (optional) |
 | Website | Web Developer | ⏳ Plan + 12-section homepage blueprint ready | Propose platform/stack (needs approval) |
 | Client acquisition | Marketing | ⏳ Segments defined | Prospect list (20–30), email/LinkedIn sequences, Sample Kit program |
@@ -38,7 +38,8 @@ Legend: ✅ done · 🟡 in progress · ⏳ not started · ⛔ blocked
 - Strategy: `03-marketing/brand-strategy.md` · decisions: `03-marketing/brand-decisions.md` · PDF: `deliverables/phase3/`.
 - Logo v1.2 files: `brand/logo/` (svg, png, favicon set, guidelines PDF, mockups). Logo Palette (all variants, fonts F1–F6, suggestions S1–S5): `brand/logo/palette/Cup1_Logo_Palette.html`.
 - Colours: Harbor Teal #1F4E5A, Ink #1C2B2E, Kraft #B88A5A, Paper #F7F3EC, Kraft Tint #EDE5D8, Verified #2E7D4F (compliance only). Font: Inter. Tokens: `brand/design-system/tokens.json`.
-- **Open:** [ ] owner's Logo Palette pick · [ ] if a new font is chosen, outline the final SVGs · [ ] trademark search · [ ] ® only after registration.
+- **Logo v2.0 (2026-11-06):** owner's Sample 1 rebuilt in vector, spelled **Cups1**: `brand/logo/cups1-v2/` (full/tagline, no-tagline, navbar, icon, reversed, black, favicon set, overview PNG). Colours Navy #102A4C, Orange #F28A1B, Leaf #5FA136.
+- **Open:** [ ] confirm rename Cup1 → Cups1 everywhere (domain, docs, trademark search) · [ ] approve v2.0 · [ ] keep/drop leaf (claims rule) · [ ] update `brand/design-system/tokens.json` + brand doc to navy/orange · [ ] trademark search on "Cups1" · [ ] ® only after registration.
 
 ## Website – inputs ready
 `02-website/website-features-plan.md` (requirement/quote system, admin, tracking stages) + `02-website/website-design-teardown.md` (12-section homepage + product page blueprint, `brand/homepage-blueprint.png`).
