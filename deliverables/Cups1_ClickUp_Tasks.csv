@@ -1,0 +1,35 @@
+Task Name,Description,List,Tags,Priority,Status,Due Date
+"Send RFQs to Sowinpak (Vietnam plant), Jeafer, Hengxin",12oz double-wall cup prices at 30k/50k/100k; lead time; MOQ,1 · Decisions & suppliers,Business,urgent,to do,11/11/2026
+"Request FDA, PFAS-free, BRCGS, FSC documents + samples",From every supplier that quotes,1 · Decisions & suppliers,Business,urgent,to do,11/11/2026
+Decide company registration country + bank (USD),Confirm USD receipt rules with an accountant,1 · Decisions & suppliers,Owner,urgent,to do,11/13/2026
+Decide target margin and deposit split,"Plan assumes 30-35% gross margin, 50/50 deposit",1 · Decisions & suppliers,Owner,high,to do,11/13/2026
+Decide Sample Kit pricing (paid vs free),Kit cost ~$15-25 + courier,1 · Decisions & suppliers,Owner,high,to do,11/13/2026
+Trademark check for Cups1 (USA & Canada),CupsPak name risk noted,1 · Decisions & suppliers,Owner,high,to do,11/13/2026
+Check CBSA decision on Chinese paper cups,Update Canada numbers,1 · Decisions & suppliers,Business,normal,to do,11/17/2026
+Register main domain + separate sending domain,After trademark check,2 · Foundation,Web Developer,high,to do,11/16/2026
+Set up 2 business inboxes,"Google Workspace or Microsoft 365, real names",2 · Foundation,Web Developer,high,to do,11/16/2026
+"Publish SPF, DKIM, DMARC for both domains",Required by Gmail/Yahoo,2 · Foundation,Web Developer,high,to do,11/17/2026
+Start inbox warm-up (2-3 weeks),No cold email before warm-up ends,2 · Foundation,Marketing,high,to do,11/17/2026
+Get US mailing address for emails and ads,USPS box or registered virtual mailbox (CAN-SPAM),2 · Foundation,Owner,normal,to do,11/20/2026
+"Set up HubSpot CRM, import 100 prospects",Pipeline: Prospect > Contacted > Replied > Sample sent > Quote sent > Won/Lost,2 · Foundation,Marketing,normal,to do,11/20/2026
+Create Google Business Profile + LinkedIn company page,"Logo, offer, website",2 · Foundation,Marketing,normal,to do,11/20/2026
+One-page PDF offer sheet,"Offer, sizes, MOQ, lead time, delivered-price example, documents list",2 · Foundation,Marketing,normal,to do,11/25/2026
+Logo mock-up template,Send each prospect their logo on our cup within 24h,2 · Foundation,Marketing,normal,to do,11/25/2026
+"Website: home, product pages, quote form, Sample Kit, documents page","Quote form: product, size, qty, city, logo upload + thank-you page",2 · Foundation,Web Developer,high,to do,11/27/2026
+"Landing pages per ad group (cafes, bubble tea, caterers, Canada)",Same quote form,2 · Foundation,Web Developer,normal,to do,11/27/2026
+"Tracking: GA4, Google Ads conversion, Meta Pixel, LinkedIn tag, Clarity, cookie consent",Conversion = quote form + Sample Kit request,2 · Foundation,Web Developer,high,to do,11/27/2026
+Google Search Console + Bing Webmaster Tools,Submit sitemap,2 · Foundation,Web Developer,normal,to do,11/27/2026
+"Compare supplier quotes, build delivered (DDP) price USA & Canada",Check against noissue 'from $0.10',3 · Pricing & samples,Business,high,to do,11/30/2026
+Freight forwarder + customs broker quotes,LCL to LA and Vancouver,3 · Pricing & samples,Business,normal,to do,11/30/2026
+Order samples from top 2 suppliers; assemble Sample Kits,"8/12/16oz cups, lid, bowl, print guide, price sheet",3 · Pricing & samples,Business,high,to do,12/04/2026
+"Lawyer review: CAN-SPAM, CASL and claims",Before first cold email,3 · Pricing & samples,Owner,normal,to do,12/04/2026
+Verify all 100 prospect emails,Drop bounces; keep bounce rate under 3%,4 · Outreach & ads,Marketing,high,to do,12/04/2026
+Find decision makers for the 50 C-grade leads,LinkedIn + company sites,4 · Outreach & ads,Marketing,normal,to do,12/04/2026
+Launch Google Search ads ($10/day),"Keywords, negatives, ad groups per plan",4 · Outreach & ads,Marketing,high,to do,11/30/2026
+Email batch 1: top 8 prospects,"Onyx, Frothy Monkey, Thyme & Again, Merit, Happy Goat, R.J. Schinner, Taste Catering, Kaldi's",4 · Outreach & ads,Owner,high,to do,12/07/2026
+Launch Meta retargeting + Bing ads,Once 300+ site visitors tagged,4 · Outreach & ads,Marketing,normal,to do,12/14/2026
+Publish first 2 SEO articles,Then 2 per month,4 · Outreach & ads,Marketing,normal,to do,12/31/2026
+Email rollout: remaining 92 prospects (4-email sequence),20-30 new emails/day per inbox; main push in January,4 · Outreach & ads,Owner,high,to do,01/31/2027
+Weekly KPI review (every Monday),"Reply rate, cost per quote request, quotes, wins",5 · Reviews,Marketing,normal,to do,12/07/2026
+6-week budget review: move budget to best channel,Cost per quote request target under $80,5 · Reviews,Owner,high,to do,01/11/2027
+Day-90 review: 3 paying clients?,Decide next 90 days and budget,5 · Reviews,Owner,high,to do,02/06/2027

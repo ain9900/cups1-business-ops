@@ -12,7 +12,7 @@ Legend: ✅ done · 🟡 in progress · ⏳ not started · ⛔ blocked
 | Branding | Marketing | ✅ **Final logo set** (owner artwork) + favicon/icons + tokens updated: `brand/logo/final/` | Confirm Cup1 → Cups1 rename scope; vector trace for print; brand doc colours |
 | Competitor research | Marketing | ✅ 18 sites + design direction v2 + **15-competitor list matched to final model** (`03-marketing/competitor-list-15.md`) | Owner: approve colour rule + homepage structure |
 | Website | Web Developer | ⏳ Plan + 12-section homepage blueprint ready | Propose platform/stack (needs approval) |
-| Client acquisition | Marketing | ⏳ Segments defined | Prospect list (20–30), email/LinkedIn sequences, Sample Kit program |
+| Client acquisition | Marketing | 🟡 **100 prospects found** (USA 71 / Canada 29; A 3 · B 47 · C 50), none contacted. `03-marketing/Cups1_Prospect_List_100.xlsx`, briefing chapter 11 | Plan final: email + ads + SEO, ≈ $500/month, 3 clients in 90 days ([plan](https://claude.ai/artifact/5odrG8pa15JrZatmoZdMLY), briefing ch. 12). Next: foundation weeks 1–3 (domains, SPF/DKIM/DMARC, site pages, tracking) |
 | Client onboarding | Business | ⏳ | Client brief template, artwork/proof process, service agreement |
 | Procurement & fulfillment | Business | ⏳ | PO template, non-circumvention agreement, inspection, forwarder, US/CA customs broker |
 | Finance | Business | ⏳ Cost & margin model exists (`deliverables/phase2/Cup1_Phase2_Sourcing_Model.xlsx`) | Per-order P&L, cash-flow plan, USD receipt rules (accountant) |

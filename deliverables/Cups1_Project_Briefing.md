@@ -451,9 +451,67 @@ A kraft box with 8/12/16oz cups, ripple cup, ice-cream cup and bowl, a print gui
 
 ### Prospecting plan
 
-Build a list of 20–30 café groups (Google Maps, LinkedIn), then personal email and LinkedIn messages leading to a call and a Sample Kit.
+Target: 100 prospects. All 100 are found, see chapter 11. Then personal emails and LinkedIn messages that lead to a call and a Sample Kit.
 
 11
+
+## First 100 prospects
+
+100 possible buyers in the USA and Canada. Every email, phone number and name was read from the company's own website on 2026-11-06. Nothing is guessed. Full list: `03-marketing/Cups1_Prospect_List_100.xlsx` (summary: `03-marketing/prospect-list-100.md`).
+
+| Measure | Value |
+|---|---|
+| Prospects found | 100 of 100 |
+| By type | Café groups 71 · Caterers 15 · Bubble tea 6 · Distributors 4 · Café chains/franchises 4 |
+| By country | USA 71 · Canada 29 |
+| Contact quality | A (decision maker's own email) 3 · B (decision maker named, plus a company email or phone) 47 · C (company contact or form only) 50 |
+| Store reach | about 1,182 cafés and stores |
+| Top regions | CA 14 · ON 13 · NY 11 · BC 7 · CO 5 |
+
+### Contact these 8 first
+
+- **Onyx Coffee Lab**: 10 sites. andrea@onyxcoffeelab.com (Co-Founder, runs operations)
+- **Frothy Monkey**: 8 cafés. ryan@frothymonkey.com (Owner)
+- **Thyme & Again**: Ottawa caterer. sheila.whyte@thymeandagain.ca (Owner/Founder)
+- **Merit Coffee**: 15 cafés. Katie Well (VP Retail Cafés), via wholesale@meritcoffee.com
+- **Happy Goat Coffee**: 22 Ottawa cafés and kiosks. Henry Assad (CEO)
+- **R.J. Schinner Co.**: distributor with 20 branches. Purchasing VPs Tim Scott and John Meganck
+- **Taste Catering**: San Francisco. Blake Perstac (Purchasing Manager), info@tastecatering.com
+- **Kaldi's Coffee**: 20 cafés. info@kaldiscoffee.com, 314.727.9991
+
+No prospect has been contacted yet. Before sending, verify every email and follow CAN-SPAM (USA) and CASL (Canada). Gap: only 4 distributors, because many distributor sites block automated reading.
+
+12
+
+## How we reach clients
+
+We win our first 3 paying clients within 90 days through three channels: personal cold email to the 100 prospects, small Google ads, and an SEO website. Budget: about $500 a month, moved to whichever channel brings the cheapest quote requests. Full plan: [Cups1 Client Acquisition Plan](https://claude.ai/artifact/5odrG8pa15JrZatmoZdMLY).
+
+<details>
+<summary>Show the full plan</summary>
+
+| Item | USD/month (estimate) |
+|---|---|
+| Google Search ads | 300 |
+| Meta retargeting | 60 |
+| Microsoft Ads (Bing) | 40 |
+| Email tools | 60 |
+| Hosting + domains | 40 |
+| **Total** | **500** |
+
+Target funnel, 90 days (assumption): 25 conversations → 15 logo mock-ups → 10 Sample Kits → 6 quotes → 3 paying clients.
+
+Timeline (start assumed 2026-11-09): foundation weeks 1–3 · Google ads from week 4 · email sequences from week 5 (main push in January) · Meta + Bing from week 6 · budget review 2027-01-11 · day-90 review 2027-02-06.
+
+- **Email:** verify addresses; separate sending domain with SPF/DKIM/DMARC; 2–3 weeks warm-up; 20–30 new emails a day per inbox; 4 emails over 3 weeks; postal address + opt-out (CAN-SPAM, CASL).
+- **Ads:** Google Search on "custom paper cups", "coffee cups with logo", "custom bubble tea cups", "custom paper cups canada"; negative keywords; LinkedIn ads only from month 3–4; target cost per quote request under $80.
+- **SEO:** a page per search intent (hot cups, cold cups, bowls & boxes, Canada, compliance documents, Sample Kit); 2 articles a month; technical SEO; directory listings and trade guest posts.
+- **Lead to sale:** reply in 2 h → mock-up in 24 h → call → Sample Kit in 3 days → delivered-price quote in 48 h → follow up day 3/7/14 → reorder reminder.
+- **Rules:** claims rule; no bought lists; no quote without a real supplier price; spam complaints under 0.3%; lawyer check before launch.
+
+</details>
+
+13
 
 ## Main risks
 
@@ -470,7 +528,7 @@ Build a list of 20–30 café groups (Google Maps, LinkedIn), then personal emai
 
 Policies, contracts and legal texts are drafts and need a lawyer's review. This briefing is not legal or financial advice.
 
-12
+14
 
 ## Recommended next 30 days
 
@@ -502,11 +560,11 @@ Week 4 · from 2026-11-30
 
 ### Prepare to sell
 
-- Prospect list of 20–30 café groups
+- Verify emails; find decision makers for C-grade leads
 - Email and LinkedIn messages
 - Sample Kit box quote; terms of sale draft
 
-13
+15
 
 ## Where everything is
 
@@ -519,6 +577,8 @@ Week 4 · from 2026-11-30
 | Brand and logo         | `03-marketing/brand-strategy.md` · `brand/logo/final/` · `brand/design-system/`                                                                 |
 | Competitors            | `03-marketing/competitor-list-15.md` · `competitor-intelligence-report.md`                                                                      |
 | Websites and design    | `02-website/competitor-website-report.md` · `website-design-direction-v2.md` · `website-features-plan.md` · `competitor-screenshots/`           |
+| Prospect list (100) | `03-marketing/Cups1_Prospect_List_100.xlsx` · `03-marketing/prospect-list-100.md` |
+| Client acquisition plan | [Cups1 Client Acquisition Plan](https://claude.ai/artifact/5odrG8pa15JrZatmoZdMLY) (online doc) |
 | This briefing          | `deliverables/Cups1_Project_Briefing.md`                                                                                                        |
 
 Key sources
