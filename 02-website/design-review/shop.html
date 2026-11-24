@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop packaging · Cups1</title>
+<style>
+@font-face{font-family:Inter;src:url(assets/inter-latin.woff2)}
+:root{--navy:#00213c;--apricot:#e9a76f;--hover:#9e4614;--paper:#f7f2ea;--line:#e5ddd2}
+*{box-sizing:border-box}body{margin:0;color:var(--navy);background:#fff;font:15px Inter,Arial,sans-serif}button,select{font:inherit;color:inherit}button,select{cursor:pointer}button:focus-visible,select:focus-visible{outline:3px solid var(--hover);outline-offset:3px}
+.wrap{width:min(1340px,calc(100% - 48px));margin:auto}header{border-bottom:1px solid var(--line)}.top{display:flex;align-items:center;justify-content:space-between;min-height:76px}.brand{width:128px;height:auto}.button{border:0;background:var(--apricot);border-radius:8px;padding:11px 16px;font-weight:700}.button:hover{background:var(--hover);color:white}
+.hero{background:var(--paper);border-bottom:1px solid var(--line);padding:48px 0}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--hover)}h1{font-size:clamp(34px,6vw,62px);letter-spacing:-.055em;margin:10px 0}.hero p{margin:0;line-height:1.6}.notice{font-size:13px;color:#65574b;margin-top:15px!important}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}nav button{padding:9px 14px;border-radius:7px;border:1px solid var(--line);background:white}nav button[aria-pressed=true]{background:var(--navy);color:white;border-color:var(--navy)}
+#count{font-size:13px;margin:20px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:16px;padding-bottom:40px}.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.card:hover{border-color:var(--apricot)}.media{position:relative;aspect-ratio:1;background:var(--paper);display:grid;place-items:center;color:#665949;font-size:13px}.media img{width:100%;height:100%;object-fit:cover;position:absolute}.quick{position:absolute;right:10px;bottom:10px;border:0;border-radius:8px;background:var(--navy);color:white;min-height:38px;padding:0 12px;font-weight:700;font-size:13px}.quick:disabled{opacity:.5;cursor:default}.body{padding:15px;display:grid;gap:9px}.body h2{font-size:15px;line-height:1.4;margin:0;min-height:42px}.body label,.case{font-size:12px;color:#514a43}.body select{min-width:0;width:100%;height:38px;background:white;border:1px solid var(--line);border-radius:6px;padding:0 8px}.price{font-size:19px;font-weight:750}.case{min-height:16px}dialog{color:var(--navy);border:1px solid var(--line);border-radius:12px;width:min(500px,calc(100% - 32px));padding:24px}dialog::backdrop{background:#00213c80}li{margin-bottom:10px}
+@media(max-width:560px){.wrap{width:calc(100% - 28px)}.grid{grid-template-columns:1fr 1fr;gap:10px}.body{padding:10px}.hero{padding:32px 0}.price{font-size:16px}}
+</style>
+<header><div class="wrap top"><img class="brand" src="../../brand/logo/final/cups1-logo-final-nav.png" alt="Cups1"><button class="button" id="cart">Demo cart (0)</button></div></header>
+<section class="hero"><div class="wrap"><div class="eyebrow">Cups1 shop</div><h1>Shop packaging</h1><p>Browse cups, lids, and food packaging by size, fit, or pack.</p><p class="notice">Design preview. Prices, quantities, and imagery shown on sample cards are illustrative.</p></div></section>
+<main class="wrap"><nav aria-label="Product collections"></nav><p id="count" aria-live="polite"></p><div class="grid" id="products"></div><p id="status" role="status"></p></main>
+<dialog id="bag" aria-labelledby="bag-title"><form method="dialog"><button class="button">Close</button></form><h2 id="bag-title">Demo cart</h2><ul></ul><p id="total"></p></dialog>
+<script>
+const products = [
+  {
+    "sku": "C1-DW",
+    "name": "Double-wall paper cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "8 oz",
+      "12 oz",
+      "16 oz"
+    ],
+    "defaultOption": "8 oz"
+  },
+  {
+    "sku": "C1-SW",
+    "name": "Single-wall paper cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "4 oz",
+      "8 oz",
+      "10 oz",
+      "12 oz",
+      "16 oz",
+      "20 oz"
+    ],
+    "defaultOption": "4 oz"
+  },
+  {
+    "sku": "C1-RW",
+    "name": "Ripple-wall paper cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "8 oz",
+      "12 oz",
+      "16 oz"
+    ],
+    "defaultOption": "8 oz"
+  },
+  {
+    "sku": "C1-DS",
+    "name": "Paper dessert cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "4 oz",
+      "8 oz",
+      "12 oz",
+      "16 oz"
+    ],
+    "defaultOption": "4 oz"
+  },
+  {
+    "sku": "C1-CC-PET",
+    "name": "Clear PET cold cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "3 oz",
+      "5 oz",
+      "7 oz",
+      "9 oz",
+      "10 oz",
+      "12 oz",
+      "16 oz",
+      "20 oz",
+      "24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "3 oz"
+  },
+  {
+    "sku": "C1-CC-PLA",
+    "name": "Clear PLA cold cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "3 oz",
+      "5 oz",
+      "7 oz",
+      "9 oz",
+      "10 oz",
+      "12 oz",
+      "16 oz",
+      "20 oz",
+      "24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "3 oz"
+  },
+  {
+    "sku": "C1-CC-U",
+    "name": "Clear U-shaped cold cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "12 oz",
+      "16 oz",
+      "24 oz"
+    ],
+    "defaultOption": "12 oz"
+  },
+  {
+    "sku": "C1-BC-PLA",
+    "name": "Branded PLA cold cups",
+    "category": "Cups",
+    "attribute": "Size",
+    "options": [
+      "3 oz",
+      "9 oz",
+      "12 oz",
+      "16 oz",
+      "20 oz",
+      "24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "3 oz"
+  },
+  {
+    "sku": "C1-BC-PLA-16",
+    "name": "Branded PLA cold cups, 16 oz",
+    "category": "Cups",
+    "attribute": "Pack",
+    "options": [
+      "20-pack",
+      "50-pack",
+      "Case"
+    ],
+    "defaultOption": "20-pack"
+  },
+  {
+    "sku": "C1-BC-PET-16",
+    "name": "Branded PET cold cups, 16 oz",
+    "category": "Cups",
+    "attribute": "Pack",
+    "options": [
+      "20-pack",
+      "50-pack",
+      "Case"
+    ],
+    "defaultOption": "20-pack"
+  },
+  {
+    "sku": "C1-L-HOT",
+    "name": "Hot cup lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "8 oz",
+      "10–24 oz"
+    ],
+    "defaultOption": "8 oz"
+  },
+  {
+    "sku": "C1-L-HOT-SIP",
+    "name": "White hot sip lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "6–8 oz",
+      "10–24 oz"
+    ],
+    "defaultOption": "6–8 oz"
+  },
+  {
+    "sku": "C1-L-BOWL",
+    "name": "Bowl lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "24–32 oz round",
+      "40 oz wide"
+    ],
+    "defaultOption": "24–32 oz round"
+  },
+  {
+    "sku": "C1-L-DOME",
+    "name": "Cold dome lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "12–24 oz"
+    ],
+    "defaultOption": "12–24 oz"
+  },
+  {
+    "sku": "C1-CL",
+    "name": "Clamshell containers",
+    "category": "Containers",
+    "attribute": "Size",
+    "options": [
+      "6 × 6 in",
+      "8 × 8 in",
+      "9 × 9 in",
+      "9 × 6 in"
+    ],
+    "defaultOption": "6 × 6 in"
+  },
+  {
+    "sku": "C1-CL-3",
+    "name": "Three-compartment clamshells",
+    "category": "Containers",
+    "attribute": "Size",
+    "options": [
+      "8 × 8 in",
+      "9 × 9 in"
+    ],
+    "defaultOption": "8 × 8 in"
+  },
+  {
+    "sku": "C1-BOWL",
+    "name": "Kraft food and salad bowls",
+    "category": "Containers",
+    "attribute": "Size",
+    "options": [
+      "12 oz",
+      "16 oz",
+      "24 oz",
+      "24 oz oval",
+      "32 oz",
+      "40 oz"
+    ],
+    "defaultOption": "12 oz"
+  },
+  {
+    "sku": "C1-L-PLA-FLAT",
+    "name": "PLA cold flat lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "9 oz",
+      "10 oz",
+      "12–24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "9 oz"
+  },
+  {
+    "sku": "C1-L-PLA-SIP",
+    "name": "PLA cold sip lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "9 oz",
+      "10 oz",
+      "12–24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "9 oz"
+  },
+  {
+    "sku": "C1-L-PLA-DOME",
+    "name": "PLA cold dome lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "9 oz",
+      "10 oz",
+      "12–24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "9 oz"
+  },
+  {
+    "sku": "C1-L-PET-FLAT",
+    "name": "PET cold flat lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "9 oz",
+      "10 oz",
+      "12–24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "9 oz"
+  },
+  {
+    "sku": "C1-L-PET-SIP",
+    "name": "PET cold sip lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "9 oz",
+      "10 oz",
+      "12–24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "9 oz"
+  },
+  {
+    "sku": "C1-L-PET-DOME",
+    "name": "PET cold dome lids",
+    "category": "Lids",
+    "attribute": "Fit",
+    "options": [
+      "9 oz",
+      "10 oz",
+      "12–24 oz",
+      "32 oz"
+    ],
+    "defaultOption": "9 oz"
+  },
+  {
+    "sku": "C1-TRAY-R",
+    "name": "Regular food trays",
+    "category": "Containers",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-TRAY-S",
+    "name": "Square food trays",
+    "category": "Containers",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-TRAY-D",
+    "name": "Deep food trays",
+    "category": "Containers",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-BOX-S",
+    "name": "Small takeaway boxes",
+    "category": "Containers",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-BOX-L",
+    "name": "Large takeaway boxes",
+    "category": "Containers",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-BOX-CL",
+    "name": "Clamshell takeaway boxes",
+    "category": "Containers",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-KN",
+    "name": "Knives",
+    "category": "Ware",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-SP",
+    "name": "Spoons",
+    "category": "Ware",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-FK",
+    "name": "Forks",
+    "category": "Ware",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-ST",
+    "name": "Straws",
+    "category": "Ware",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-COLD",
+    "name": "Custom cold cups",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-HOT",
+    "name": "Custom paper hot cups",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-DESSERT",
+    "name": "Custom ice cream cups",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-SOUP",
+    "name": "Custom soup cups",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-SLEEVE",
+    "name": "Custom hot cup sleeves",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-PAPER",
+    "name": "Custom greaseproof paper",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-NAP",
+    "name": "Custom napkins",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  },
+  {
+    "sku": "C1-CU-BAG",
+    "name": "Custom paper bags",
+    "category": "Custom Products",
+    "attribute": "",
+    "options": [],
+    "defaultOption": ""
+  }
+];
+const samples = {
+  'C1-DW': ['double-wall.webp', 58, 500],
+  'C1-SW': ['single-wall.webp', 39, 1000],
+  'C1-RW': ['ripple-wall.webp', 62, 500],
+  'C1-DS': ['dessert.webp', 44, 500],
+  'C1-BOWL': ['bowls.webp', 74, 250],
+  'C1-BOX-S': ['boxes.webp', 47, 200],
+};
+const money = new Intl.NumberFormat('en-US', {style:'currency',currency:'USD'});
+const grid = document.querySelector('#products');
+const nav = document.querySelector('nav');
+const cart = document.querySelector('#cart');
+const bag = document.querySelector('#bag');
+const items = new Map();
+let collection = 'Cups';
+
+for (const category of ['All products', 'Cups', 'Lids', 'Containers', 'Ware', 'Custom Products']) {
+  const button = document.createElement('button');
+  button.textContent = category;
+  button.addEventListener('click', () => { collection = category; render(); });
+  nav.append(button);
+}
+
+function productCard(product) {
+  const sample = samples[product.sku];
+  const custom = product.category === 'Custom Products';
+  const card = document.createElement('article');
+  card.className = 'card';
+  card.innerHTML = '<div class="media"><span>Image pending</span><button class="quick" type="button">Add to cart</button></div><div class="body"><h2></h2><label></label><select></select><div class="price" aria-live="polite"></div><div class="case"></div></div>';
+  const media = card.querySelector('.media');
+  const title = card.querySelector('h2');
+  const select = card.querySelector('select');
+  const label = card.querySelector('label');
+  const price = card.querySelector('.price');
+  const quantity = card.querySelector('.case');
+  const quick = card.querySelector('.quick');
+  title.textContent = product.name;
+  select.id = product.sku;
+  label.htmlFor = select.id;
+  label.textContent = product.attribute;
+  for (const option of product.options) select.add(new Option(option, option));
+  if (product.defaultOption) select.value = product.defaultOption;
+  select.hidden = label.hidden = !product.options.length;
+  quick.hidden = !sample;
+  quick.setAttribute('aria-label', 'Add ' + product.name + ' to demo cart');
+
+  if (sample) {
+    const image = new Image();
+    image.src = 'assets/' + sample[0];
+    image.alt = product.name + ' concept image';
+    image.loading = 'lazy';
+    media.prepend(image);
+  }
+
+  function update() {
+    if (!sample) {
+      price.textContent = custom ? 'Custom quote' : 'Price pending';
+      return;
+    }
+    const index = Math.max(select.selectedIndex, 0);
+    price.textContent = money.format(sample[1] + index * 8);
+    quantity.textContent = (sample[2] / (index > 2 ? 2 : 1)).toLocaleString('en-US') + ' units per case';
+  }
+
+  select.addEventListener('change', update);
+  quick.addEventListener('click', () => {
+    const key = product.sku + ':' + select.value;
+    const index = Math.max(select.selectedIndex, 0);
+    const item = items.get(key) ?? {name: product.name, option: select.value, price: sample[1] + index * 8, count: 0};
+    item.count++;
+    items.set(key, item);
+    cart.textContent = 'Demo cart (' + [...items.values()].reduce((sum, row) => sum + row.count, 0) + ')';
+    document.querySelector('#status').textContent = product.name + ' added to demo cart.';
+    renderCart();
+    bag.showModal();
+  });
+  update();
+  return card;
+}
+
+function renderCart() {
+  const list = bag.querySelector('ul');
+  list.replaceChildren();
+  let total = 0;
+  for (const item of items.values()) {
+    const row = document.createElement('li');
+    row.textContent = [item.name, item.option, item.count + ' × ' + money.format(item.price)].filter(Boolean).join(' · ');
+    list.append(row);
+    total += item.count * item.price;
+  }
+  bag.querySelector('#total').textContent = items.size ? 'Sample subtotal ' + money.format(total) : 'Your demo cart is empty.';
+}
+
+function render() {
+  const visible = products.filter(product => collection === 'All products' || product.category === collection);
+  for (const button of nav.children) button.setAttribute('aria-pressed', String(button.textContent === collection));
+  document.querySelector('#count').textContent = visible.length + ' products';
+  grid.replaceChildren(...visible.map(productCard));
+}
+cart.addEventListener('click', () => { renderCart(); bag.showModal(); });
+render();
+</script>
+</html>

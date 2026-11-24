@@ -31,7 +31,7 @@ then **Open decisions** (waiting for the owner). The full history is in the **De
 - [ ] Show prices online? (suggested: "from" prices, e.g. "from 30,000 cups · ~35 days + shipping"; final price by quote)
 - [ ] **Website colour rule** (orange = buttons/prices only, paper background, navy headings) and homepage structure: `02-website/website-design-direction-v2.md`
 - [ ] **Website launch features** from the competitor website report (8 "Launch" ideas; delivered-price example; quote reply time): `02-website/competitor-website-report.md`
-- [ ] Website platform / tech stack (Web Developer to propose) and domain
+- [x] Build the Cups1 v2 site at `v2.cups1.com` using WordPress and editable Elementor widgets. The site uses the EarthStore-inspired local design as its reference. See `02-website/README.md`.
 - [ ] Languages at launch (English first; Arabic later if Middle East is chosen)
 - [ ] Professional trademark search before registering "Cup1" / "Cups1" (note: Chinese cup maker **CupsPak**, cupspak.com, has a similar name)
 

@@ -1,0 +1,18 @@
+.post-type-cups1_inquiry .column-cups1_contact { width: 31%; }
+.post-type-cups1_inquiry .column-cups1_status { width: 13%; }
+.post-type-cups1_inquiry .column-cups1_reference { width: 14%; }
+.post-type-cups1_inquiry .wp-list-table td { padding-block: 12px; }
+.post-type-cups1_inquiry .column-cups1_reference { font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.cups1-inquiry-secondary { display: block; color: #505c69; margin-top: 3px; overflow-wrap: anywhere; }
+.cups1-inquiry-status { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.cups1-inquiry-incomplete { color: #744700; background: #fff0cf; }
+.cups1-inquiry-complete { color: #14543d; background: #dff4e9; }
+.cups1-inquiry-summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #edf2f8; color: #142d47; border-radius: 8px; padding: 16px; font-size: 16px; }
+.cups1-inquiry-section { padding: 14px 0; border-bottom: 1px solid #e2e8ee; }
+.cups1-inquiry-section h3 { margin: 0 0 12px; color: #142d47; }
+.cups1-inquiry-section dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 14px 20px; margin: 0; }
+.cups1-inquiry-section dt { color: #505c69; font-size: 12px; font-weight: 600; }
+.cups1-inquiry-section dd { margin: 3px 0 0; overflow-wrap: anywhere; }
+@media (max-width: 782px) {
+  .post-type-cups1_inquiry .column-cups1_contact { width: auto; }
+}

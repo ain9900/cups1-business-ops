@@ -1,0 +1,2100 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-11-24 10:26:12",
+  "containerVersion": {
+    "path": "accounts/6407569107/containers/288489610/versions/7",
+    "accountId": "6407569107",
+    "containerId": "288489610",
+    "containerVersionId": "7",
+    "name": "Cups1 product view variation IDs",
+    "description": "Resolve the selected WooCommerce variation before storefront scripts populate cart IDs. Verified GA4 View Item and Meta ViewContent both used variation 182 in Chrome Preview. Purchase remains unpublished.",
+    "container": {
+      "path": "accounts/6407569107/containers/288489610",
+      "accountId": "6407569107",
+      "containerId": "288489610",
+      "name": "cups1.com",
+      "publicId": "GTM-W4F8PCCM",
+      "usageContext": [
+        "WEB"
+      ],
+      "fingerprint": "1795503917300",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6407569107/containers/288489610/workspaces?apiLink=container",
+      "features": {
+        "supportUserPermissions": true,
+        "supportEnvironments": true,
+        "supportWorkspaces": true,
+        "supportGtagConfigs": false,
+        "supportBuiltInVariables": true,
+        "supportClients": false,
+        "supportFolders": true,
+        "supportTags": true,
+        "supportTemplates": true,
+        "supportTriggers": true,
+        "supportVariables": true,
+        "supportVersions": true,
+        "supportZones": true,
+        "supportTransformations": false
+      },
+      "tagIds": [
+        "GTM-W4F8PCCM"
+      ]
+    },
+    "tag": [
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "4",
+        "name": "GA4 - Cups1 Production Web",
+        "type": "dest_ga",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "destinationId",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795503689486",
+        "firingTriggerId": [
+          "3"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "10",
+        "name": "GA4 - add_to_cart",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "currency"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - currency}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - value}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "items"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - items}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "product_category"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - product_category}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "add_to_cart"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795508545023",
+        "firingTriggerId": [
+          "9"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "14",
+        "name": "Meta Pixel - SampleRequest",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  var id = '{{CONST - Meta Pixel ID}}';\n  if (w.cups1MetaPixel === id && w.fbq) w.fbq('trackSingleCustom', id, 'SampleRequest');\n})(window);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795509437322",
+        "firingTriggerId": [
+          "13"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "ad_storage"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_user_data"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_personalization"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "22",
+        "name": "Meta Pixel - AddToCart",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  var pixel = '{{CONST - Meta Pixel ID}}';\n  if (w.cups1MetaPixel !== pixel || !w.fbq) return;\n  var id = '{{DLV - items.0.item_id}}';\n  var quantity = Number('{{DLV - items.0.quantity}}');\n  var currency = '{{DLV - currency}}';\n  var value = Number('{{DLV - value}}');\n  if (!/^\\d+$/.test(id) || !/^[A-Z]{3}$/.test(currency) ||\n      !isFinite(value) || value < 0 || quantity < 1 || quantity % 1 !== 0) return;\n  var category = '{{DLV - product_category}}';\n  var data = {\n    content_ids: [id],\n    contents: [{id: id, quantity: quantity, item_price: value / quantity}],\n    content_type: 'product',\n    value: value,\n    currency: currency\n  };\n  if (category && category !== 'undefined' && category !== 'null') data.content_category = category;\n  w.fbq('trackSingle', pixel, 'AddToCart', data);\n})(window);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795509089696",
+        "firingTriggerId": [
+          "9"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "ad_storage"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_user_data"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_personalization"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "25",
+        "name": "GA4 - generate_lead",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "lead_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - lead_type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "form_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - form_type}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "generate_lead"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795508544987",
+        "firingTriggerId": [
+          "15"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "27",
+        "name": "Meta Pixel - Revoke consent",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  if (w.cups1MetaPixel !== '{{CONST - Meta Pixel ID}}' || !w.fbq || w.cups1MetaRevoked) return;\n  w.fbq('consent', 'revoke');\n  w.cups1MetaRevoked = true;\n})(window);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795509032551",
+        "firingTriggerId": [
+          "26"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_NEEDED"
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "29",
+        "name": "Meta Pixel - PageView",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w, d) {\n  var id = '{{CONST - Meta Pixel ID}}';\n  if (!/^\\d{8,25}$/.test(id)) return;\n  function safePage(url) {\n    if (/^\\/(?:wp-admin|wp-login\\.php|my-account|checkout)(?:\\/|$)/i.test(url.pathname)) return false;\n    var inquiryRoute = /^(?:\\/$|\\/(?:request-a-quote|request-a-sample|contact-sales|contact|configure-packaging)\\/?$)/.test(url.pathname);\n    if (url.hash && !(inquiryRoute && url.hash === '#quote')) return false;\n    var parameters = new URLSearchParams(url.search);\n    return Array.from(parameters).every(function (entry) {\n      var key = entry[0];\n      var value = entry[1];\n      if (/^utm_(?:source|medium|campaign|id|term|content|source_platform|creative_format|marketing_tactic)$/.test(key)) {\n        return /^[a-z0-9 ._+|():-]{1,128}$/i.test(value);\n      }\n      if (key === 'fbclid') return /^[A-Za-z0-9_-]{1,400}$/.test(value);\n      if (key === 'gtm_debug') return /^\\d{1,20}$/.test(value);\n      if (key === 'collection' && /^\\/products\\/?$/.test(url.pathname)) return /^(?:cups|lids|containers|ware)$/.test(value);\n      if (!inquiryRoute) return false;\n      if (key === 'packaging_product' || key === 'product') {\n        return /^(?:double-wall|single-wall|ripple-wall|dessert|bowls|boxes|other|wc-\\d{1,10})$/.test(value);\n      }\n      if (key === 'packaging_size') return /^\\d{1,4}(?:[.-]\\d{1,4})? *(?:oz|ml|l)$/i.test(value);\n      return key === 'intent' && /^(?:quote|pricing|sample|contact|customize)$/.test(value);\n    });\n  }\n  if (!safePage(w.location)) return;\n  if (d.referrer) {\n    var referrer = new URL(d.referrer);\n    if (referrer.origin === w.location.origin ? !safePage(referrer) : referrer.search || referrer.hash) return;\n  }\n  function shownVariant(product, button) {\n    if (button && /^\\d+$/.test(button.dataset.cartId || '')) return button.dataset.cartId;\n    var form = product.querySelector('.variations_form');\n    if (!form) return '';\n    var options = Array.from(form.querySelectorAll('select[name^=\"attribute_\"]')).filter(function (select) {\n      return select.value;\n    });\n    if (!options.length) return '';\n    var variants;\n    try { variants = JSON.parse(form.getAttribute('data-product_variations') || '[]'); }\n    catch (error) { return ''; }\n    if (!Array.isArray(variants)) return '';\n    var matching = variants.filter(function (variant) {\n      return variant.attributes && options.every(function (select) {\n        var value = variant.attributes[select.name];\n        return value === '' || value === select.value;\n      });\n    });\n    return matching.length === 1 && /^\\d+$/.test(String(matching[0].variation_id)) ? String(matching[0].variation_id) : '';\n  }\n\n  function trackCatalog() {\n    if (/^\\/products\\/?$/.test(w.location.pathname)) {\n      if (!w.cups1MetaCatalogViewed) {\n        var collection = new URLSearchParams(w.location.search).get('collection') || 'all';\n        w.cups1MetaCatalogViewed = true;\n        w.fbq('trackSingleCustom', id, 'ViewCategory', { content_category: collection });\n      }\n      return;\n    }\n    if (!/^\\/product\\/[^/]+\\/?$/.test(w.location.pathname)) return;\n    function send() {\n      if (w.cups1MetaContentViewed || w.cups1MetaRevoked || !safePage(w.location)) return;\n      var product = d.querySelector('[data-product-detail]');\n      if (!product) return;\n      var heading = d.getElementById(product.getAttribute('aria-labelledby'));\n      var button = product.querySelector('[data-catalog-cart-item]');\n      var parent = /(?:^|\\s)postid-(\\d+)(?:\\s|$)/.exec(d.body.className);\n      var variationId = shownVariant(product, button);\n      var productId = variationId || button && button.dataset.catalogCartItem || parent && parent[1];\n      var kind = !variationId && product.querySelector('.variations_form') ? 'product_group' : 'product';\n      if (!/^\\d+$/.test(productId || '') || !heading) return;\n      var lookup = w.cups1CatalogMeasurement;\n      (lookup ? lookup.detail(productId, button && button.dataset.catalogCartItem || parent && parent[1]) : Promise.resolve({})).then(function (metadata) {\n        if (w.cups1MetaContentViewed || w.cups1MetaRevoked || !safePage(w.location)) return;\n        var fields = metadata.fields || {};\n        var data = { content_ids: [productId], content_name: heading.textContent.trim(), content_type: kind };\n        if (fields.item_category) data.content_category = fields.item_category;\n        if (fields.item_sku) data.product_sku = fields.item_sku;\n        if (fields.item_variant) data.product_variant = fields.item_variant;\n        if (metadata.pricing_mode) data.pricing_mode = metadata.pricing_mode;\n        if (metadata.price_band) data.price_band = metadata.price_band;\n        if (metadata.price !== undefined) {\n          data.value = metadata.price;\n          data.currency = metadata.currency;\n          data.contents = [{ id: productId, quantity: 1, item_price: metadata.price }];\n        }\n        w.cups1MetaContentViewed = true;\n        w.fbq('trackSingle', id, 'ViewContent', data);\n      });\n    }\n    if (d.readyState === 'complete') send();\n    else w.addEventListener('load', send, { once: true });\n  }\n  if (w.cups1MetaPixel === id) {\n    if (w.fbq && w.cups1MetaRevoked) {\n      w.fbq('consent', 'grant');\n      w.cups1MetaRevoked = false;\n      trackCatalog();\n    }\n    return;\n  }\n  if (!w.fbq) {\n    var queue = function () {\n      if (queue.callMethod) queue.callMethod.apply(queue, arguments);\n      else queue.queue.push(arguments);\n    };\n    w.fbq = queue;\n    if (!w._fbq) w._fbq = queue;\n    queue.push = queue;\n    queue.loaded = true;\n    queue.version = '2.0';\n    queue.queue = [];\n    var script = d.createElement('script');\n    script.async = true;\n    script.src = 'https://connect.facebook.net/en_US/fbevents.js';\n    d.head.appendChild(script);\n  }\n  w.fbq('consent', 'grant');\n  w.fbq('set', 'autoConfig', false, id);\n  w.fbq('init', id);\n  w.cups1MetaPixel = id;\n  w.fbq('trackSingle', id, 'PageView');\n  trackCatalog();\n})(window, document);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795515268541",
+        "firingTriggerId": [
+          "28"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "ad_storage"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_user_data"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_personalization"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "30",
+        "name": "GA4 - sample_request",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "lead_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - lead_type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "form_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - form_type}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "sample_request"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795508544987",
+        "firingTriggerId": [
+          "13"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "31",
+        "name": "Meta Pixel - Lead",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  var id = '{{CONST - Meta Pixel ID}}';\n  if (w.cups1MetaPixel === id && w.fbq) w.fbq('trackSingle', id, 'Lead');\n})(window);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795509437322",
+        "firingTriggerId": [
+          "15"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "ad_storage"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_user_data"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_personalization"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "32",
+        "name": "Meta Pixel - Contact",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  var id = '{{CONST - Meta Pixel ID}}';\n  if (w.cups1MetaPixel === id && w.fbq) w.fbq('trackSingle', id, 'Contact');\n})(window);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795509437321",
+        "firingTriggerId": [
+          "16"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "ad_storage"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_user_data"
+              },
+              {
+                "type": "TEMPLATE",
+                "value": "ad_personalization"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "33",
+        "name": "GA4 - contact_request",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "lead_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - lead_type}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "form_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - form_type}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "contact_request"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795508544988",
+        "firingTriggerId": [
+          "16"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "35",
+        "name": "GA4 - view_item",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "items"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - items}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "product_category"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - product_category}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "currency"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - currency}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - value}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "pricing_mode"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - pricing_mode}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "price_band"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - price_band}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "view_item"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795510407756",
+        "firingTriggerId": [
+          "34"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "37",
+        "name": "GA4 - view_cart",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "currency"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - currency}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - value}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "items"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - items}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "product_category"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - product_category}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "view_cart"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795510407756",
+        "firingTriggerId": [
+          "36"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "40",
+        "name": "Cups1 - WooCommerce funnel events",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w, d) {\n  function emit(event, payload) {\n    w.dataLayer = w.dataLayer || [];\n    payload.event = event;\n    w.dataLayer.push(payload);\n  }\n\n  function displayPrice(amount, minorUnit) {\n    if (amount == null || amount === '' || !Number.isInteger(minorUnit) || minorUnit < 0 || minorUnit > 6) return NaN;\n    return Number(amount) / Math.pow(10, minorUnit);\n  }\n\n  function shownVariant(product, button) {\n    if (button && /^\\d+$/.test(button.dataset.cartId || '')) return button.dataset.cartId;\n    var form = product.querySelector('.variations_form');\n    if (!form) return '';\n    var options = Array.from(form.querySelectorAll('select[name^=\"attribute_\"]')).filter(function (select) {\n      return select.value;\n    });\n    if (!options.length) return '';\n    var variants;\n    try { variants = JSON.parse(form.getAttribute('data-product_variations') || '[]'); }\n    catch (error) { return ''; }\n    if (!Array.isArray(variants)) return '';\n    var matching = variants.filter(function (variant) {\n      return variant.attributes && options.every(function (select) {\n        var value = variant.attributes[select.name];\n        return value === '' || value === select.value;\n      });\n    });\n    return matching.length === 1 && /^\\d+$/.test(String(matching[0].variation_id)) ? String(matching[0].variation_id) : '';\n  }\n\n  function viewProduct() {\n    var product = d.querySelector('[data-product-detail]');\n    if (!product) return;\n    var heading = d.getElementById(product.getAttribute('aria-labelledby'));\n    var cartButton = product.querySelector('[data-catalog-cart-item]');\n    var post = /(?:^|\\s)postid-(\\d+)(?:\\s|$)/.exec(d.body.className);\n    var id = shownVariant(product, cartButton) || cartButton && cartButton.dataset.catalogCartItem || post && post[1];\n    var name = heading && heading.textContent.trim();\n    if (!/^\\d+$/.test(id || '') || !name) return;\n    var lookup = w.cups1CatalogMeasurement;\n    (lookup ? lookup.detail(id, cartButton && cartButton.dataset.catalogCartItem || post && post[1]) : Promise.resolve({})).then(function (metadata) {\n      var item = Object.assign({ item_id: id, item_name: name, quantity: 1 }, metadata.fields || {});\n      if (metadata.price !== undefined) item.price = metadata.price;\n      emit('cups1_product_view', {\n        items: [item], currency: metadata.currency || null, value: metadata.price === undefined ? null : metadata.price,\n        product_category: item.item_category || null, pricing_mode: metadata.pricing_mode || 'unknown', price_band: metadata.price_band || null\n      });\n    });\n  }\n\n  function readCart(event) {\n    fetch('/wp-json/wc/store/v1/cart', { credentials: 'same-origin', cache: 'no-store' })\n      .then(function (response) { return response.ok ? response.json() : null; })\n      .then(function (cart) {\n        if (!cart || !Array.isArray(cart.items) || !cart.items.length) return;\n        var totals = cart.totals || {};\n        var currency = totals.currency_code;\n        var value = displayPrice(totals.total_items, totals.currency_minor_unit);\n        if (!/^[A-Z]{3}$/.test(currency || '') || !Number.isFinite(value) || value < 0) return;\n        var items = cart.items.map(function (entry) {\n          var prices = entry.prices || {};\n          var price = displayPrice(prices.price, prices.currency_minor_unit);\n          if (!/^\\d+$/.test(String(entry.id)) || !entry.name || !Number.isInteger(entry.quantity) || entry.quantity < 1 ||\n              !Number.isFinite(price) || price < 0 || prices.currency_code !== currency) return null;\n          return { item_id: String(entry.id), item_name: entry.name, quantity: entry.quantity, price: price };\n        });\n        if (!items.every(Boolean)) return;\n        var lookup = w.cups1CatalogMeasurement;\n        return (lookup ? lookup.decorate(items) : Promise.resolve(items)).then(function (enriched) {\n          var categories = new Set(enriched.map(function (item) { return item.item_category; }));\n          emit(event, { currency: currency, value: value, items: enriched, product_category: categories.size === 1 ? enriched[0].item_category || null : null });\n        });\n      }).catch(function () { /* Measurement never interrupts the storefront. */ });\n  }\n\n  function track() {\n    var path = w.location.pathname;\n    if (/^\\/product\\/[^/]+\\/?$/.test(path) && d.body.classList.contains('single-product')) viewProduct();\n    else if (/^\\/cart\\/?$/.test(path) && d.body.classList.contains('woocommerce-cart')) readCart('cups1_cart_view');\n    else if (/^\\/checkout\\/?$/.test(path) && d.body.classList.contains('woocommerce-checkout')) readCart('cups1_checkout_start');\n  }\n\n  if (d.readyState === 'complete') track();\n  else w.addEventListener('load', track, { once: true });\n})(window, document);\n</script>"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1795515281868",
+        "firingTriggerId": [
+          "39"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "41",
+        "name": "GA4 - begin_checkout",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "LIST",
+            "key": "eventSettingsTable",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "currency"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - currency}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "value"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - value}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "items"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - items}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameter",
+                    "value": "product_category"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "parameterValue",
+                    "value": "{{DLV - product_category}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "begin_checkout"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementIdOverride",
+            "value": "G-VCXTFZGR23"
+          }
+        ],
+        "fingerprint": "1795510407757",
+        "firingTriggerId": [
+          "38"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "301",
+        "name": "Cups1 - Public WooCommerce catalog data",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  if (w.cups1CatalogMeasurement) return;\n\n  var requests = new Map();\n  var departments = new Set(['cups', 'lids', 'containers', 'ware']);\n\n  function getProduct(id) {\n    id = String(id || '');\n    if (!/^\\d+$/.test(id)) return Promise.resolve(null);\n    if (!requests.has(id)) {\n      var controller = new AbortController();\n      var timer = w.setTimeout(function () { controller.abort(); }, 2500);\n      var request = w.fetch('/wp-json/wc/store/v1/products/' + id, {\n        credentials: 'same-origin',\n        signal: controller.signal\n      }).then(function (response) {\n        return response.ok ? response.json() : null;\n      }).then(function (product) {\n        return product && String(product.id) === id ? product : null;\n      }).catch(function () {\n        return null;\n      }).finally(function () {\n        w.clearTimeout(timer);\n      });\n      requests.set(id, request);\n    }\n    return requests.get(id);\n  }\n\n  function detail(id, knownParent) {\n    return Promise.all([\n      getProduct(id),\n      String(knownParent) === String(id) ? Promise.resolve(null) : getProduct(knownParent)\n    ]).then(function (resolved) {\n      var product = resolved[0];\n      var parent = resolved[1];\n      return parent || !product || !product.parent ? resolved : getProduct(product.parent).then(function (fallback) {\n        return [product, fallback];\n      });\n    }).then(function (resolved) {\n      var product = resolved[0];\n      var parent = resolved[1];\n      if (!product && !parent) return {};\n\n      var categoryProduct = parent || product;\n      var terms = categoryProduct.categories || [];\n      var primary = terms.find(function (term) { return departments.has(term.slug); }) || terms[0];\n      var secondary = terms.find(function (term) { return term !== primary; });\n      var fields = {};\n      if (primary) fields.item_category = primary.name;\n      if (secondary) fields.item_category2 = secondary.name;\n      if (product && product.sku) fields.item_sku = product.sku;\n      if (product && product.variation) fields.item_variant = product.variation;\n\n      var result = { fields: fields };\n      if (!product) return result;\n\n      var priceData = product.prices || {};\n      var minor = priceData.currency_minor_unit;\n      var amount = /^\\d+$/.test(String(priceData.price)) && Number.isInteger(minor) && minor >= 0 && minor <= 6\n        ? Number(priceData.price) / Math.pow(10, minor) : NaN;\n      if (!Number.isFinite(amount) || !/^[A-Z]{3}$/.test(priceData.currency_code || '') || !product.price_html) {\n        result.pricing_mode = !product.price_html ? 'quote_only' : 'unknown';\n      } else if (product.type === 'variable' || product.type === 'grouped') {\n        result.pricing_mode = 'variant_required';\n      } else {\n        result.pricing_mode = product.is_purchasable && product.is_in_stock ? 'priced' : 'unavailable';\n        result.price = amount;\n        result.currency = priceData.currency_code;\n        result.price_band = amount < 100 ? 'under_100' : amount < 250 ? '100_to_249' : amount < 500 ? '250_to_499' : '500_plus';\n      }\n      return result;\n    });\n  }\n\n  function decorate(items) {\n    return Promise.all(items.map(function (item, index) {\n      if (index >= 15) return Promise.resolve(item);\n      return detail(item.item_id).then(function (metadata) {\n        return Object.assign({}, item, metadata.fields || {});\n      });\n    }));\n  }\n\n  w.cups1CatalogMeasurement = { detail: detail, decorate: decorate };\n})(window);\n</script>"
+          }
+        ],
+        "firingTriggerId": [
+          "301"
+        ],
+        "tagFiringOption": "ONCE_PER_LOAD",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_NEEDED"
+        }
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "tagId": "302",
+        "name": "Cups1 - Enrich successful cart addition",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "<script>\n(function (w) {\n  var layer = w.dataLayer;\n  if (!Array.isArray(layer)) return;\n  var action, preferences;\n  for (var i = layer.length - 1; i >= 0 && (!action || !preferences); i--) {\n    var entry = layer[i];\n    if (entry && entry.event === 'cups1_cart_add' && !action) action = entry;\n    if (entry && entry.event === 'wpconsent_consent_processed' && !preferences) preferences = entry.wpconsentPreferences;\n  }\n  if (!action || !Array.isArray(action.items) || !preferences || (!preferences.statistics && !preferences.marketing)) return;\n  var items = action.items.slice();\n  var data = {event: 'cups1_cart_add_enriched', currency: action.currency, value: action.value, items: items};\n  (w.cups1CatalogMeasurement ? w.cups1CatalogMeasurement.decorate(items) : Promise.resolve(items)).then(function (enriched) {\n    data.items = enriched;\n    data.product_category = enriched[0] && enriched[0].item_category || null;\n    w.dataLayer.push(data);\n  });\n})(window);\n</script>"
+          }
+        ],
+        "firingTriggerId": [
+          "302"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_NEEDED"
+        }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "3",
+        "name": "CE - Cups1 Analytics Consent Ready",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "wpconsent_consent_processed"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795507346862"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "9",
+        "name": "CE - Successful cart addition",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_cart_add_enriched"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795508421147"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "13",
+        "name": "CE - Completed sample request",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_inquiry_complete"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DLV - lead_type}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "sample"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "15",
+        "name": "CE - Completed quote, pricing or customization",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_inquiry_complete"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          },
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DLV - lead_type}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "^(quote|pricing|customize)$"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "16",
+        "name": "CE - Completed general contact",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_inquiry_complete"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DLV - lead_type}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "contact"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "26",
+        "name": "CE - WPConsent marketing denied",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "wpconsent_consent_processed"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DLV - Marketing Consent}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "false"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795508544987"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "28",
+        "name": "CE - WPConsent marketing granted",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "wpconsent_consent_processed"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{DLV - Marketing Consent}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "true"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795508544987"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "34",
+        "name": "CE - cups1_product_view",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_product_view"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795510407756"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "36",
+        "name": "CE - cups1_cart_view",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_cart_view"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795510407756"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "38",
+        "name": "CE - cups1_checkout_start",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_checkout_start"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795510407756"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "39",
+        "name": "CE - Statistics consent on WooCommerce funnel",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "wpconsent_consent_processed"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          },
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Path}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "^/(?:product/[^/]+|cart|checkout)/?$"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1795510407756"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "301",
+        "name": "CE - Cups1 catalog data initialization",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "gtm.init"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "triggerId": "302",
+        "name": "CE - Cups1 raw cart addition",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1_cart_add"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page Hostname}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "cups1.com"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "11",
+        "name": "CONST - Meta Pixel ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "2584915388999993"
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "12",
+        "name": "DLV - lead_type",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "lead_type"
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "17",
+        "name": "DLV - items",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "items"
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "18",
+        "name": "DLV - value",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "value"
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "19",
+        "name": "DLV - currency",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "currency"
+          }
+        ],
+        "fingerprint": "1795508544986"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "20",
+        "name": "DLV - items.0.quantity",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "items.0.quantity"
+          }
+        ],
+        "fingerprint": "1795508544987"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "21",
+        "name": "DLV - items.0.item_id",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "items.0.item_id"
+          }
+        ],
+        "fingerprint": "1795508544987"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "23",
+        "name": "DLV - Marketing Consent",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "wpconsentPreferences.marketing"
+          }
+        ],
+        "fingerprint": "1795508544987"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "24",
+        "name": "DLV - form_type",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "form_type"
+          }
+        ],
+        "fingerprint": "1795508544987"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "301",
+        "name": "DLV - product_category",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "product_category"
+          }
+        ]
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "302",
+        "name": "DLV - pricing_mode",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "pricing_mode"
+          }
+        ]
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "variableId": "303",
+        "name": "DLV - price_band",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "price_band"
+          }
+        ]
+      }
+    ],
+    "builtInVariable": [
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "type": "PAGE_URL",
+        "name": "Page URL"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "type": "PAGE_HOSTNAME",
+        "name": "Page Hostname"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "type": "PAGE_PATH",
+        "name": "Page Path"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "type": "REFERRER",
+        "name": "Referrer"
+      },
+      {
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "type": "EVENT",
+        "name": "Event"
+      }
+    ],
+    "fingerprint": "1795515411604",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6407569107/containers/288489610/versions/7?apiLink=version"
+  }
+}

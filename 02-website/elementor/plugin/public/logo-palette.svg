@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="cups1-orange" color-interpolation-filters="sRGB">
+    <!-- The red-over-green channel difference isolates the orange artwork. -->
+    <feColorMatrix in="SourceGraphic" type="matrix" values="
+      0 0 0 0 0
+      0 0 0 0 0
+      0 0 0 0 0
+      8 -8 0 0 0" result="orangeMask"/>
+    <feComposite in="SourceGraphic" in2="orangeMask" operator="out" result="otherColors"/>
+    <feFlood flood-color="#E9A76F" result="newOrange"/>
+    <feComposite in="newOrange" in2="orangeMask" operator="in"/>
+    <feComposite in2="SourceAlpha" operator="in" result="orangeArtwork"/>
+    <feComposite in="otherColors" in2="orangeArtwork" operator="arithmetic" k2="1" k3="1"/>
+  </filter>
+</svg>

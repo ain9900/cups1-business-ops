@@ -1,0 +1,212 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2026-11-24 11:59:19",
+    "containerVersion": {
+        "path": "accounts/6407569107/containers/288489610/versions/3",
+        "accountId": "6407569107",
+        "containerId": "288489610",
+        "containerVersionId": "3",
+        "name": "Cups1 GA4 via WPConsent",
+        "description": "Run the existing GA4 tag on wpconsent_consent_processed for cups1.com. The tag still requires analytics_storage and fires once per page.",
+        "container": {
+            "path": "accounts/6407569107/containers/288489610",
+            "accountId": "6407569107",
+            "containerId": "288489610",
+            "name": "cups1.com",
+            "publicId": "GTM-W4F8PCCM",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1795503917300",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6407569107/containers/288489610/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-W4F8PCCM"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "tagId": "4",
+                "name": "GA4 - Cups1 Production Web",
+                "type": "dest_ga",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "destinationId",
+                        "value": "G-VCXTFZGR23"
+                    }
+                ],
+                "fingerprint": "1795503689486",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_LOAD",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "analytics_storage"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "triggerId": "3",
+                "name": "CE - Cups1 Analytics Consent Ready",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "wpconsent_consent_processed"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Hostname}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "cups1.com"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1795507346862"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1795507424800",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6407569107/containers/288489610/versions/3?apiLink=version",
+        "gtagConfig": [
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "gtagConfigId": "5",
+                "type": "ogt_auto_events",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableOutboundClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableScroll",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDownload",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableHistoryEvents",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableForm",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableVideo",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1795503880900"
+            },
+            {
+                "accountId": "6407569107",
+                "containerId": "288489610",
+                "gtagConfigId": "6",
+                "type": "ogt_1p_data_v2",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "isEnabled",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1795503846172"
+            }
+        ]
+    }
+}
